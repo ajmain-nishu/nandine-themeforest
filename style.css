@@ -1,0 +1,1097 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+/* header section start */
+header {
+    text-align: center;
+    background-image: url(images/header-overlay.png), url(images/header-background.png);
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    background-color: rgba(0,0,0,.3);
+}
+nav .logo {
+    text-align: center;
+}
+nav .logo img {
+    padding: 20px 0;
+}
+nav .menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav .menu ul li {
+    display: inline-block;
+}
+nav .menu ul li a {
+    padding: 25px 5px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    margin-top: 100px;
+    color: white;
+}
+header h1 span {
+    font-weight: 600;
+    color: #fe320a;
+    font-family: 'Montserrat', sans-serif;
+}
+header p {
+    width: 65%;
+    margin: 30px auto;
+    color: white;
+}
+header button {
+    background-color: #fe320a;
+    border: none;
+    padding: 15px 33px;
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+}
+/* header section end */
+
+
+.about,
+.service,
+.skill,
+.happy,
+.portfolio,
+.team,
+.blog,
+.contact {
+    text-align: center;
+    background-color: #f1f2f6;
+    overflow: hidden;
+}
+.about h2,
+.service h2,
+.skill h2,
+.portfolio h2,
+.team h2
+.blog h2,
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 65px;
+    margin-bottom: 0;
+}
+.about h2 span,
+.service h2 span,
+.skill h2 span,
+.portfolio h2 span,
+.team h2 span,
+.blog h2 span,
+.contact h2 span {
+    color: #fe320a;
+}
+
+.about hr,
+.service hr,
+.skill hr,
+.portfolio hr,
+.team hr,
+.blog hr,
+.contact hr {
+    width: 10%;
+    border: none;
+    height: 1.7px;
+    background-color: #fe320a;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+
+
+/* about section start */
+.about hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.about .photo-text {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 25px;
+    margin-bottom: 80px;
+}
+.about .photo-text .photo {
+    text-align: right;
+    position: relative;
+}
+.about .photo-text .photo img {
+    width: 55%;
+}
+.about  .photo-text .photo .social-link {
+    background-color: rgba(0,0,0,.6);
+    width: 55%;
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+    text-align: center;
+}
+.about .photo-text .photo .social-link h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 3px 0 0 0;
+}
+.about .photo-text .photo .social-link a {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1.8;
+    margin: 10px 5px;
+    transition: .5s;
+}
+.about .photo-text .photo .social-link a:hover {
+    background-color: white;
+    color: black;
+}
+.about .photo-text .text {
+    text-align: left;
+    width: 69%;
+}
+.about .photo-text .text h3,
+.testimonial h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+}
+.about .photo-text .text p,
+.service .flex .icon p,
+.skill .flex-1 .col p,
+.testimonial p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+.about .photo-text .text p span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.about .photo-text .text button {
+    background-color: #fe320a;
+    border: none;
+    padding: 10px 25px;
+    font-size: 17px;
+    color: white;
+    margin: 20px 0;
+}
+/* about section end */
+
+
+
+
+/* video section start */
+.video {
+    text-align: center;
+    background-image: url(images/want-more-overlay.png), url(images/want-more-background.png);
+    background-blend-mode: multiply;
+    overflow: hidden;
+    padding: 80px 0;
+    background-size: cover;
+}
+.video h2 {
+    font-size: 33px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.video i {
+    padding: 13px 15px;
+    font-size: 25px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+/* video section end */
+
+
+
+
+/* service section start */
+.service {
+    background-color: white;
+}
+.service hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.service .flex,
+.skill .flex-1,
+.portfolio .flex-4,
+.team .flex-2,
+.blog .flex-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 50px auto;
+}
+.service .flex .icon,
+.portfolio .flex-4 .pic,
+.blog .flex-5 .box {
+    flex-grow: 1;
+    flex-basis: 260px;
+    padding: 0 10px;
+}
+.service .flex .icon i {
+    font-size: 40px;
+    color: #fe320a;
+}
+.service .flex .icon h3,
+.skill .flex-1 .col h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 23px;
+}
+.service .flex .icon p {
+    margin-top: 10px;
+}
+/* service section end */
+
+
+
+
+/* skill section start */
+.skill hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill .flex-1 .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 0 10px;
+    text-align: left;
+}
+.skill .flex-1 .col .progress ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.skill .flex-1 .col .progress ul li{
+    position: relative;
+    margin: 25px 0;
+}
+.skill .flex-1 .col .progress ul li::before {
+    content: '';
+    width: 100%;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 1000px;
+    text-align: right;
+    color: white;
+}
+.skill .flex-1 .col .progress ul li::after {
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color: #fe320a;
+    position: absolute;
+    top: calc(100% + 8px);
+    border-radius: 1000px;
+    left: .5%;
+
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.skill .flex-1 .col .progress ul li.development::after {
+    animation-name: development;
+    content: '60%';
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+@keyframes development {
+    to {
+        width: 60%;
+    }
+}
+.skill .flex-1 .col .progress ul li.design::after {
+    animation-name: design;
+    content: '80%';
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+@keyframes design {
+    to {
+        width: 80%;
+    }
+}
+.skill .flex-1 .col .progress ul li.graphics::after {
+    animation-name: graphics;
+    content: '10%';
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+@keyframes graphics {
+    to {
+        width: 10%;
+    }
+}
+/* skill section end */
+
+
+
+
+/* review section start */
+.happy {
+    background-image: url(images/happy-overlay.png), url(images/happy.png);
+    background-blend-mode: multiply;
+    padding: 60px 105px;
+    background-size: cover;
+}
+.happy .flex-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+.happy .flex-3 .item {
+    flex-grow: 1;
+    padding: 15px;
+}
+.happy .flex-3 .item i {
+    border: 2px solid white;
+    padding: 12px 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.happy .flex-3 .item h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.happy .flex-3 .item p {
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+}
+/* review section end */
+
+
+
+
+/* portfolio section start */
+.portfolio {
+    background-color: white;
+}
+.portfolio hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio .menu-2 a {
+    text-decoration: none;
+    padding: 0 10px 40px 10px;
+    display: inline-block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.portfolio .flex-4 .pic {
+    position: relative;
+    margin-bottom: 30px;
+}
+.portfolio .flex-4 .pic img {
+    width: 90%;
+}
+.portfolio .flex-4 .pic img:hover + .icon-hover {
+    display: block;
+}
+.portfolio .flex-4 .pic .icon-hover {
+    position: absolute;
+    background-color: rgba(183, 21, 64,.4);
+    width: 85%;
+    top: 0;
+    left: 7.5%;
+    bottom: 2%;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+.portfolio .flex-4 .pic .icon-hover i {
+    color: white;
+    font-size: 25px;
+    margin-top: 28%;
+}
+/* portfolio section end */
+
+
+
+
+/* team section start */
+.team {
+    padding-top: 50px;
+}
+.team hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team .flex-2 {
+    margin-bottom: 90px;
+}
+.team .flex-2 .member {
+    flex-grow: 1;
+    flex-basis: 200px;
+    position: relative;
+}
+.team .flex-2 .member img {
+    width: 85%;
+    border-bottom: 8px solid #fe320a;
+}
+.team .flex-2 .member img:hover + .overlay {
+    display: block;
+    cursor: pointer;
+}
+.team .flex-2 .member .overlay {
+    position: absolute;
+    background-color: rgba(255,0,0,.4);
+    width: 85%;
+    bottom: 1%;
+    left: 7.5%;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.team .flex-2 .member .overlay .link {
+    margin-top: 106.5%;
+    background-color: rgba(255,0,0,.7);
+    overflow: hidden;
+}
+.team .flex-2 .member .overlay .link h3 {
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 5px 0;
+}
+.team .flex-2 .member .overlay .link a {
+    color: white;
+    padding: 3px 3px 10px 3px;
+    display: inline-block;
+}
+/* team section start */
+
+
+
+
+/* testimonial section start */
+.testimonial {
+    background-image: url(images/shipon-overlay.png), url(images/shipon-background.png);
+    background-blend-mode: multiply;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 6% 24%;
+    background-size: cover;
+}
+.testimonial h3 {
+    margin: 20px 0 5px 0;
+}
+.testimonial p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* testimonial section end */
+
+
+
+
+/* blog section start */
+.blog {
+    background-color: white;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+.blog hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.blog .flex-5 .box {
+    text-align: left;
+    box-shadow: 3px 5px 15px rgba(0,0,0,.2);
+    margin: 0 18px;
+    padding: 0;
+}
+.blog .box .blog-text {
+    padding: 0 25px 27px 15px;
+}
+.blog .flex-5 .box img {
+    width: 100%;
+    border-bottom: 7px solid rgba(0,0,0,.8);
+}
+.blog .flex-5 .box .blog-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+}
+.blog .flex-5 .box .blog-text p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.9;
+}
+.blog .flex-5 .box .blog-text i {
+    color: #fe320a;
+    font-size: 12px;
+}
+.blog .flex-5 .box .blog-text i span {
+    color: black;
+    font-style: italic;
+}
+.blog .flex-5 .box .blog-text a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 9px 11px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* blog section end */
+
+
+
+
+/* contact section start */
+.contact {
+    background-image: url(images/blog-overlay.png), url(images/blog-background.png);
+    background-blend-mode: multiply;
+    padding-bottom: 70px;
+    background-size: cover;
+}
+.contact h2 {
+    color: white;
+}
+.contact hr::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fe320a;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact input {
+    width: 27%;
+    height: 30px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 10px 25px 10px;
+    background: transparent;
+}
+.contact textarea {
+    width: 59%;
+    padding: 30px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    overflow: hidden;
+    resize: none;
+}
+.contact button {
+    background-color: #fe320a;
+    color: white;
+    padding: 12px 16px;
+    /* display: inline-block; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 6px;
+    float: left;
+    border: none;
+    font-size: 15px;
+    margin-left: 18.8%;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+/* contact section end */
+
+
+
+
+/* footer section start */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+footer .footer {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.footer a {
+    color: white;
+    padding: 0 7px;
+    display: inline-block;
+    margin-top: 16px;
+}
+.footer p {
+    color: white;
+}
+/* footer section end */
+
+
+
+
+
+
+
+
+
+
+/* media section start */
+
+
+@media screen and (max-width: 1249px) {
+    .about .photo-text .photo img {
+        width: 54%;
+    }
+    .about  .photo-text .photo .social-link {
+        background-color: rgba(0,0,0,.6);
+        width: 54%;
+        position: absolute;
+        right: 0;
+        bottom: 1%;
+        text-align: center;
+    }   
+    
+}
+
+
+
+
+@media screen and (max-width: 1244px) {
+    .about .photo-text {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 25px;
+        margin-bottom: 80px;
+    }
+    .about .photo-text .photo img {
+        width: 54%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1162px) {
+    .about .photo-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .photo-text .photo img {
+        width: 30%;
+    }
+    .about .photo-text .text {
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .about .photo-text .photo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about  .photo-text .photo .social-link {
+        background-color: rgba(0,0,0,.6);
+        width: 30%;
+        position: absolute;
+        left: 35%;
+        bottom: .5%;
+        text-align: center;
+    }
+    .about .photo-text .text p {
+        text-align: justify;
+        
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1126px) {
+    .blog .flex-5 .box {
+        flex-basis: 200px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1110px) {
+    .blog .flex-5 .box .blog-text h3 {
+        font-size: 14px;
+    }
+    .blog .flex-5 .box .blog-text p {
+        font-size: 11px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1016px) {
+    .team .flex-2 .member {
+        flex-basis: 300px;
+        margin: 20px 0;
+    }
+    .team .flex-2 .member img {
+        width: 70%;
+    }
+    .team .flex-2 .member .overlay {
+        position: absolute;
+        background-color: rgba(255,0,0,.4);
+        width: 70%;
+        bottom: 1%;
+        left: 15%;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .team .flex-2 .member .overlay .link {
+        margin-top: 112.5%;
+        background-color: rgba(255,0,0,.7);
+        overflow: hidden;
+    }
+}
+
+
+
+
+@media screen and (max-width: 974px) {
+    nav .menu ul li a {
+        font-size: 13px;
+    }
+    nav .logo img {
+        width: 45%;
+    }
+    header h1 {
+        font-size: 44px;
+    }
+    header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    header button {
+        background-color: #fe320a;
+        border: none;
+        padding: 12px 30px;
+        font-size: 17px;
+        color: white;
+        margin: 20px 0;
+    }
+    .about hr,
+    .service hr,
+    .skill hr,
+    .portfolio hr,
+    .team hr,
+    .blog hr,
+    .contact hr {
+        width: 15%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 903px) {
+    .blog .flex-5 {
+        flex-direction: column;
+        
+    }
+    .blog .flex-5 .box {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .blog .flex-5 .box .blog-text h3 {
+        font-size: 18px;
+    }
+    .blog .flex-5 .box .blog-text p {
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 892px) {
+    .happy .flex-3 .item {
+        flex-basis: 200px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 825px) {
+    header {
+        background: url(images/header-overlay.png);
+        
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,.3);
+    }
+    
+    nav .menu ul li a {
+        font-size: 14px;
+    }
+    nav .logo img {
+        width: 22%;
+    }
+    header h1 {
+        font-size: 44px;
+    }
+    header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    header button {
+        background-color: #fe320a;
+        border: none;
+        padding: 12px 30px;
+        font-size: 17px;
+        color: white;
+        margin: 20px 0;
+    }
+}
+
+
+
+
+@media screen and (max-width:750px) {
+    nav .menu ul li {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    nav .menu ul li a {
+        font-size: 13px;
+    }
+    header {
+        height: 1100px;
+    }
+    nav .menu ul {
+        padding-left: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 669px) {
+    .happy .flex-3 .item {
+        flex-basis: 120px;
+    }
+    .blog .flex-5 .box {
+        width: 70%;
+    }
+    .contact input {
+        width: 60%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px 0;
+    }
+    .one {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+    .two {
+        grid-column: 1 / -1;
+    }
+    footer .footer  {
+        margin: 0px 0;
+    }
+    footer .footer a {
+        font-size: 25px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 573px) {
+    .about .photo-text .photo img {
+        width: 58%;
+    }
+    .about  .photo-text .photo .social-link {
+        background-color: rgba(0,0,0,.6);
+        width: 58%;
+        left: 21%;
+        bottom: .5%;
+    }
+    .about hr,
+    .service hr,
+    .skill hr,
+    .portfolio hr,
+    .team hr,
+    .blog hr,
+    .contact hr {
+        width: 19%;
+    }
+    header {
+        height: 1300px;
+    }
+    header h1 {
+        font-size: 38px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+    .video h2 {
+        font-size: 20px;
+    }
+    .about hr,
+    .service hr,
+    .skill hr,
+    .portfolio hr,
+    .team hr,
+    .blog hr,
+    .contact hr {
+        width: 25%;
+    }
+    .portfolio .menu-2 a {
+        display: block;
+    }
+}
+
+
+
+
+@media screen and (max-width: 340px) {
+    .blog .flex-5 .box {
+        width: 85%;
+    }
+    nav .logo img {
+        width: 49%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 285px) {
+    .about hr,
+    .service hr,
+    .skill hr,
+    .portfolio hr,
+    .team hr,
+    .blog hr,
+    .contact hr {
+        width: 30%;
+    }
+    header h1 {
+        font-size: 33px;
+    }
+    .about  .photo-text .photo .social-link {
+        display: none;
+    }
+    nav .logo img {
+        width: 45%;
+    }
+    .video h2 {
+        font-size: 16px;
+    }
+    .skill p {
+        text-align: justify;
+    }
+
+}
+
+
+/* media section end */
